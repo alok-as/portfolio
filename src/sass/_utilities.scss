@@ -1,0 +1,54 @@
+.paragraph{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--primaryColor);
+    line-height: 1.8;
+    opacity: 0;
+    animation: bounce-up 1s .2s 1 ease-in forwards;
+}
+
+.heading__primary{
+    font-family: var(--secondaryFont);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: slide-in-left 1s 1s 1 ease-in forwards;
+
+}
+
+.heading__secondary{
+    font-family: var(--secondaryFont);
+    color: #BFBFBF;
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0;
+    animation: slide-in-right 1s 1s 1 ease-in forwards;
+}
+
+.heading__tertiary{
+    font-size: 3.4rem;
+    font-family: var(--secondaryFont);
+    color: rgba(0,0,0,0.8);
+}
+
+
+
+
+//MARGINS
+.mt-small{
+    margin-top: 2rem;
+}
+.mb-small{
+    margin-bottom: 2rem;
+}
+.mb-medium{
+    margin-bottom: 4rem;
+}
+
+
+
+//ALIGNMENT
+.text-center{
+    text-align: center;
+}

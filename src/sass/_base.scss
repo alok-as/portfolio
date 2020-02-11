@@ -1,3 +1,102 @@
+// Adding the Google Font
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins:300,400,500,700&display=swap');
+
+:root{
+    --primaryFont:'Montserrat', sans-serif;
+    --secondaryFont:'Poppins', sans-serif;
+    --primaryColor:#999999;
+}
+
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: orangered;
+    font-family: var(--primaryFont);
+    font-size: 1.6rem;    
+    font-weight: 400;
+    line-height: 1.7;
+    box-sizing: border-box;
+}
+
+
+section{
+    padding: 10rem 0;
+}
+
+
+@keyframes bounce-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+    70%{
+        transform: translateY(1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-up{
+    0%{
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    70%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes slide-in-left{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    70%{
+        transform: translateX(1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right{
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    70%{
+        transform: translateX(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

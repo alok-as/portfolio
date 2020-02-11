@@ -7,6 +7,118 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">alok<span>.</span></div>   
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link" id="focusMe">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#tech" class="nav__link">Technologies</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="legal">
+                Copyright &copy; 2020 All rights reserved | This template is developed by <span>Alok Sharma<span>
+                <div class="social mt-small">
+                    <svg class="social__icon">
+                        <use xlink:href="./src/img/sprites.svg#icon-facebook"></use>
+                    </svg>
+                    <svg class="social__icon">
+                        <use xlink:href="./src/img/sprites.svg#icon-twitter"></use>
+                    </svg>
+                    <svg class="social__icon">
+                        <use xlink:href="./src/img/sprites.svg#icon-instagram"></use>
+                    </svg>
+                    <svg class="social__icon">
+                        <use xlink:href="./src/img/sprites.svg#icon-linkedin2"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="main-area">
+            <header id="home" class="header">
+                <div class="header__overlay"></div>
+                <div class="header__content">
+                    <div class="header__text">
+                        <img src="./src/img/author.jpg" alt="Author" class="header__photo">
+                        <div class="header__description">
+                            <h2 class="heading__secondary">Hello I'm</h2>
+                            <h1 class="heading__primary mb-small">Alok Sharma</h1>
+                            <p class="paragraph">Self Learned Programmer wih aptitude for Web and Software Development seeking opportunity to learn and leverage strong programming foundation for providing better user experience.</p>
+                        </div>
+                    </div>
+                </div>    
+            </header>
+            <section id="tech">
+                <div class="text-center">
+                    <h3 class="heading__tertiary mb-medium">Languages and Technologies</h3>
+                    <div class="tech__skills mt-small">
+                        <div class="tech__skill">
+                            <svg class="tech__skill-icon">
+                                <use xlink:href="./src/img/sprites.svg#icon-javascript"></use>
+                            </svg>
+                            <p>Javascript</p>
+                        </div>
+                        <div class="tech__skill">
+                            <svg class="tech__skill-icon">
+                                <use xlink:href="./src/img/sprites.svg#icon-vue-dot-js"></use>
+                            </svg>
+                            <p>Vue.js</p>
+                        </div>
+                        <div class="tech__skill">
+                            <svg class="tech__skill-icon">
+                                <use xlink:href="./src/img/sprites.svg#icon-python"></use>
+                            </svg>
+                            <p>Python</p>
+                        </div>
+                        <div class="tech__skill">
+                            <svg class="tech__skill-icon">
+                                <use xlink:href="./src/img/sprites.svg#icon-c"></use>
+                            </svg>
+                            <p>C</p>
+                        </div>
+                        <div class="tech__skill">
+                            <svg class="tech__skill-icon html5">
+                                <use xlink:href="./src/img/sprites.svg#icon-html5"></use>
+                            </svg>
+                            <p>Html 5</p>
+                        </div>
+                        <div class="tech__skill">
+                            <svg class="tech__skill-icon css3">
+                                <use xlink:href="./src/img/sprites.svg#icon-css3"></use>
+                            </svg>
+                            <p>Css 3</p>
+                        </div>
+                        <div class="tech__skill">
+                            <svg class="tech__skill-icon">
+                                <use xlink:href="./src/img/sprites.svg#icon-sass"></use>
+                            </svg>
+                            <p>Scss</p>
+                        </div>
+                        <div class="tech__skill">
+                            <svg class="tech__skill-icon">
+                                <use xlink:href="./src/img/sprites.svg#icon-bootstrap"></use>
+                            </svg>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="tech__skill">
+                            <svg class="tech__skill-icon">
+                                <use xlink:href="./src/img/sprites.svg#icon-github"></use>
+                            </svg>
+                            <p>Git & Github</p>
+                        </div>
+                    </div>    
+                
+                </div>
+                
+            </section>
+        </div> 
+    </div>
+
+    <script>
+        document.querySelector('#focusMe').focus();
+    </script>
 </body>
 </html>
