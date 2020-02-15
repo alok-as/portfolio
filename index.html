@@ -117,12 +117,12 @@
                 <h3 class="heading__tertiary mb-medium">Contact Information</h3>
                 <div class="contact__details">
                     <div class="contact__photo">My Photo</div>
-                    <form action="" class="form">
-                        <input type="text" class="form__field" placeholder="Name">
-                        <input type="text" class="form__field" placeholder="Email">
-                        <input type="text" class="form__field" placeholder="Subject">
-                        <textarea class="form__field form__field--message" placeholder="Message"></textarea>
-                        <a href="#" class="btn">Send Message</a>
+                    <form action="submit_form" method="post" class="form">
+                        <input name="name" type="text" class="form__field" placeholder="Name">
+                        <input name="email "type="email" class="form__field" placeholder="Email">
+                        <input name="subject" type="text" class="form__field" placeholder="Subject">
+                        <textarea name="message" class="form__field form__field--message" placeholder="Message"></textarea>
+                        <a href="submit_form" class="btn">Send Message</a>
                     </form>
                 </div>
             </section>
