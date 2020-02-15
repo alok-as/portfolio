@@ -152,10 +152,11 @@
 
 //TECH SECTION
 .tech{
+    padding: 10rem 4rem;
     &__skills{
         display: grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-row-gap: 5rem;
+        grid-template-columns:repeat(3,1fr);
+        grid-gap:3rem;
     }
 
     &__skill{
@@ -166,6 +167,81 @@
         .css3{
             fill: #0282ca;
         }
-
     }
 }
+
+
+//CONTACT SECTION
+.contact{
+    padding: 4rem;
+
+    &__details{
+        display: flex;
+    }
+
+    &__photo{
+        flex: 0 0 50%;
+        background-color: var(--primaryColor);
+        margin-right:3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+    }
+
+
+    .form{
+        flex: 1;
+        display:flex;
+        flex-direction: column;
+
+        &__field{
+            font-size: 1.5rem;
+            font-family: inherit;
+            font-weight: 500;
+            padding: 1.6rem 1.3rem;
+            &:not(:last-child){
+                margin-bottom: 1.5rem;
+            }
+
+            &--message{
+                height: 15rem;
+            }
+        }
+    }
+}
+
+
+.btn{
+    &:link,&:visited{
+        text-decoration: none;
+        background-color: #f05d23;
+        border: 1px solid currentColor;
+        font-size: 1.6rem;
+        color: white;
+        padding: 2rem;
+        display: inline-block;
+        border-radius: 10rem;
+        border: none;
+        cursor: pointer;
+        transition: all .3s;
+    }
+    
+    &:hover{
+        background-color: transparent;
+        color: #f05d23;
+        border: 1px solid currentColor;
+    }
+}
+
+
+
+//FOOTER SECTION
+.footer{
+    background-color: #132238;
+    color: white;
+    height: 20rem;
+    padding: 4rem;
+}
+
